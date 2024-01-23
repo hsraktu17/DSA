@@ -2,21 +2,18 @@
 
 using namespace std;
 
-int main(){
-    int n; 
-    cout<<"enter number";
-    cin >> n;
-    vector<int> arr(n);
-    cout<<"the the array values";
-    for(int i : arr){
-        cin >> i;
-    }
-    int maxi = arr[0];
-    for(int i = 1; i < arr.size();i++){
-        if(maxi < arr[i]){
-            maxi = arr[i];
+int maxii(vector<int> a){
+    int maxi = a[0];
+    for(int i = 0; i < a.size(); i++){
+        if(maxi < a[i]){
+            maxi = a[i];
         }
     }
-    cout<< maxi;
+    return maxi;
+}
 
+int main(){
+    vector<int> num = {12,3,53,2,5,1};
+    int ans = maxii(num);
+    cout<<ans;
 }
