@@ -22,7 +22,7 @@ vector<vector<int>> divideArray(vector<int>& num, int k){
         }
         
     }
-    
+    res.push_back(vec);
     return res;
 }
 
